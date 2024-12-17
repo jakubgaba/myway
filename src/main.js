@@ -5,7 +5,7 @@ document.querySelector('#app').innerHTML = `
     <div class="sideTitle">
     <div>
     <p class="sideTitleName">Jakub Gaba</p>
-    <p class="sideTitleInfo">Developer/Design</p>
+    <p class="sideTitleInfo">Developer/Design enthusiast</p>
 </div>
 </div>
   </div>
