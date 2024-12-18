@@ -1,11 +1,12 @@
 import './style.css';
-import {displayNameAndTitle, displayLeftCorner} from "./mainDisplay/display.js";
+import gsap from 'gsap';
+import {displayNameAndTitle, displayRightCorner} from "./mainDisplay/display.js";
+
 
 document.querySelector('#app').innerHTML = `
-<div>
-    ${displayNameAndTitle()}
+  ${displayNameAndTitle()}
+  <div class="rightCornerWrapper">
+   ${displayRightCorner()}
 </div>
-<div>
-  ${displayLeftCorner()}
-</div>
+ 
 `;

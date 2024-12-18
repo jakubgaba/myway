@@ -12,7 +12,6 @@
 
 body {
     background-color: black;
-    cursor: pointer;
     margin: 0;
     line-height: inherit;
     height: 100rem;
@@ -47,4 +46,18 @@ body {
     font-family: Iceland, sans-serif;
     font-size: 0.75rem;
     line-height: 1rem;
+}
+.rightCornerMenu{
+    display: block;
+    vertical-align: middle;
+}
+.rightCornerWrapper{
+    gap: .5rem;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+    display: flex;
+    right: 2rem;
+    bottom: 2rem;
+    position: fixed;
 }
