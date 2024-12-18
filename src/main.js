@@ -1,14 +1,11 @@
-import './style.css'
+import './style.css';
+import {displayNameAndTitle, displayLeftCorner} from "./mainDisplay/display.js";
 
 document.querySelector('#app').innerHTML = `
-  <div>
-    <div class="sideTitle">
-    <div>
-    <p class="sideTitleName">Jakub Gaba</p>
-    <p class="sideTitleInfo">Developer/Design enthusiast</p>
+<div>
+    ${displayNameAndTitle()}
 </div>
+<div>
+  ${displayLeftCorner()}
 </div>
-  </div>
-`
-
-
+`;

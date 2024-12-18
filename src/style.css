@@ -2,12 +2,11 @@
 ::before,
 ::after {
     box-sizing: border-box;
-      border-width: 0;
+    border-width: 0;
     border-style: solid;
     border-color: #e5e7eb;
     padding: 0;
     margin: 0;
-
 }
 
 
@@ -16,6 +15,7 @@ body {
     cursor: pointer;
     margin: 0;
     line-height: inherit;
+    height: 100rem;
 }
 
 @font-face {
