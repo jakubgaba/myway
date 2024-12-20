@@ -1,6 +1,6 @@
 /**
- * Generates an SVG element inside of a WRAPPER element.
- * @param {string} name - The text to be displayed in the SVG.
+ * Body of buttons created together with path lines
+ * @see {@link addHoverEffect} - rightCornerMenu paths are animated here
  */
 export function addSVGCorner(name) {
     return `
@@ -19,10 +19,11 @@ fill="none"
 </svg>
     `
 }
-
 /**
  * Generates SVG element paths for left and top side of the WRAPPER element.
- * @see {@link addHoverEffect} - Emitter for this class
+ * Initial values of top line and left line
+ * @see {@link App} - Called here
+ * @see {@link addHoverEffect} - topLineSvg and leftLineSvg effects are created here.
  */
 export function addLineToSVGCorner() {
     return `

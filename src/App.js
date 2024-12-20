@@ -16,6 +16,7 @@ export class App {
             this.appElement = newAppElement;
         }
         this.appElement.innerHTML = `
+            
             ${displayNameAndTitle()}
             <div class="rightCornerWrapper">
                 ${addLineToSVGCorner()}
