@@ -1,3 +1,7 @@
+/**
+ * Generates an SVG element inside of a WRAPPER element.
+ * @param {string} name - The text to be displayed in the SVG.
+ */
 export function addSVGCorner(name) {
     return `
     <svg class="rightCornerMenu" 
@@ -16,6 +20,10 @@ fill="none"
     `
 }
 
+/**
+ * Generates SVG element paths for left and top side of the WRAPPER element.
+ * @see {@link addHoverEffect} - Emitter for this class
+ */
 export function addLineToSVGCorner() {
     return `
   <svg class="topLineSvg" xmlns="http://www.w3.org/2000/svg">

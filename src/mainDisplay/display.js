@@ -1,5 +1,4 @@
-import {addHoverEffect} from "./basicEffects.js";
-import {addLineToSVGCorner, addSVGCorner} from "./svgCornerMenu.js";
+import {addSVGCorner} from "./svgCornerMenu.js";
 
 export function displayNameAndTitle() {
     return `
@@ -13,17 +12,6 @@ export function displayNameAndTitle() {
         </div>
     `;
 }
-
-
 export function displayRightCorner() {
-    return addSVGCorner("INFO") + addSVGCorner("ABOUT") + addSVGCorner("SakDick");
+    return addSVGCorner("INFO") + addSVGCorner("ABOUT") + addSVGCorner("PRESS");
 }
-
-
-export function displayLeftCorner() {
-}
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    addHoverEffect();
-});

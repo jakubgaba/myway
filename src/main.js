@@ -1,13 +1,10 @@
 import './style.css';
-import gsap from 'gsap';
-import {displayNameAndTitle, displayRightCorner} from "./mainDisplay/display.js";
-import {addLineToSVGCorner} from "./mainDisplay/svgCornerMenu.js";
+import {App} from './App.js';
+import {addHoverEffect} from "./mainDisplay/basicEffects.js";
 
 
-document.querySelector('#app').innerHTML = `
-  ${displayNameAndTitle()}
-     <div class="rightCornerWrapper">
-  ${addLineToSVGCorner()}
-  ${displayRightCorner()}
-  </div>
-`;
+document.addEventListener('DOMContentLoaded', () => {
+  const app = new App();
+  app.initialize();
+  addHoverEffect();
+});
