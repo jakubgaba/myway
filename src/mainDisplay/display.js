@@ -1,5 +1,5 @@
 import {addHoverEffect} from "./basicEffects.js";
-import {addSVGCorner} from "./svgCornerMenu.js";
+import {addLineToSVGCorner, addSVGCorner} from "./svgCornerMenu.js";
 
 export function displayNameAndTitle() {
     return `
