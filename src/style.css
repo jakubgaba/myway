@@ -10,6 +10,7 @@
 }
 
 
+
 body {
     background-color: black;
     margin: 0;
@@ -112,4 +113,25 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+.webgl-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;      /* Enables flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    overflow: hidden;   /* Prevents scrollbars if the canvas exceeds the viewport */
+  
+}
+.webgl {
+    border: 1px solid white;
+    max-width: 90%;  /* Maximum width but can be adjusted or removed */
+    max-height: 90%; /* Maximum height but can be adjusted or removed */
+    width: auto;     /* Width managed by Three.js but you can set a default */
+    height: auto;    /* Height managed by Three.js but you can set a default */
+    /* The following properties can help if there's a need to handle the canvas' display size */
+    display: block;  /* Ensures there's no extra space under the canvas */
 }
