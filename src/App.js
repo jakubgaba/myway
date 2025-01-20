@@ -21,6 +21,7 @@ export class App {
             <div class="rightCornerWrapper">
                 ${addLineToSVGCorner()}
                 ${displayRightCorner()}
+                //Text
             </div>
         `;
     }
